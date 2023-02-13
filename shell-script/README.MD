@@ -20,6 +20,20 @@ comandos ´env´ e ´printenv´ mostram variaveis de ambientes no terminal
     export $teste
 -remover variável
     unset teste
-    
 
 *não pode haver espaço
+
+Criar função:
+ palavra() {
+> cd /home/tallys/
+> echo 'linha acrescentada' >> teste
+> }
+
+typeset -f : mostra funçoes
+
+> : insere resultado dentro de um arquivo e posteriormente sobrepõe
+>> : insere resultado dentro de um arquivo e mas ao final não sobrepõe, adiciona ao final do arquivo
+
+arq=`date +%d%m%y%H%M`
+ls -la /home/tallys > log.$arq
+
